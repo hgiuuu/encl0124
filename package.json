@@ -1,0 +1,59 @@
+{
+  "name": "spa_encl",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "devDependencies": {
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hgiuuu/spa_encl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hgiuuu/spa_encl/issues"
+  },
+  "homepage": "https://github.com/hgiuuu/spa_encl#readme",
+  "description": "",
+  "build": {
+    "appId": "com.electron.spa_encl",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.js",
+      "index.html",
+      "action01.html",
+      "action02.html",
+      "renderer.js",
+      "preload.js",
+      "assets",
+      "package.json",
+      "package-lock.json"
+    ],
+    "mac": {
+      "icon": "assets/mac/icon_mac.icns",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "icon": "assets/win/spa_encl.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
