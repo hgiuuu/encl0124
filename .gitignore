@@ -12,4 +12,5 @@
 *.vsix
 
 node_modules/
-dist/
+dist/*
+!dist/*.exe

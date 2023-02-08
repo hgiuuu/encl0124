@@ -28,6 +28,7 @@
       "output": "dist"
     },
     "files": [
+      "manifest.json",
       "index.js",
       "index.html",
       "action01.html",
@@ -54,6 +55,7 @@
     }
   },
   "dependencies": {
+    "electron-store": "^8.1.0",
     "express": "^4.18.2"
   }
 }
